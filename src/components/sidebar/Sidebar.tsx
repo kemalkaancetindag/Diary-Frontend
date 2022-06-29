@@ -12,10 +12,7 @@ const Sidebar = () => {
                 </li>
                 <li>
                     <a href='#'>Timeline</a>
-                </li>
-                <li>
-                    <a href='#'>Mood</a>
-                </li>
+                </li>              
             </ul>
 
         </nav>

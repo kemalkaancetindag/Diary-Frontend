@@ -1,0 +1,16 @@
+.write__text-area {
+    font-size: 30px;
+    color: white;
+    opacity: 0.8;
+    margin-top: 20px;
+    width: 80%;
+    height: 60%;
+    background: transparent;
+    border: none;
+    resize: none;
+}
+
+.write__text-area:focus {
+    outline: none;
+    opacity: 1;
+}
