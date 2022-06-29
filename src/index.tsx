@@ -9,7 +9,8 @@ import {
 } from "react-router-dom";
 import IndexPage from './pages/IndexPage';
 import App from './App';
-import Write from './pages/Write';
+import WritePage from './pages/WritePage';
+import ProfiePage from './pages/ProfilePage';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -19,7 +20,8 @@ root.render(
       <BrowserRouter>
     <Routes>
       <Route path="/" element={<IndexPage />}/>      
-      <Route path="/write" element={<Write/>}/>  
+      <Route path="/write" element={<WritePage/>}/>
+      <Route path="/profile" element={<ProfiePage/>}/>  
     </Routes>
   </BrowserRouter>
   </React.StrictMode>

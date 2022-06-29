@@ -16,7 +16,7 @@ const IndexPage = () => {
             </div>
 
             <div className='app__container-right'>
-                <AppBar />
+                <AppBar header='How Are You feeling Today?'/>
                 <BackInTime />
                 <FeelingCard />
             </div>
