@@ -1,4 +1,5 @@
 import React from "react";
+import MoodModal from "../components/mood-modal/MoodModal";
 import Sidebar from "../components/sidebar/Sidebar";
 import WriteImageArea from "../components/write-image-area/WriteImageArea";
 import WriteTextArea from "../components/write-text-area/WriteTextArea";
@@ -15,7 +16,8 @@ const Write = () => {
             <div className='app__container-right'>      
                 <WriteTextInput/> 
                 <WriteImageArea/>    
-                <WriteTextArea/>    
+                <WriteTextArea/>   
+                <MoodModal/> 
             </div>
 
         </div>

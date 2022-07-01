@@ -1,0 +1,82 @@
+.hidden {
+    display: none;
+}
+
+.mood__modal-container {
+    display: flex;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */    
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */    
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    
+    
+}
+
+.mood__container {  
+    white-space: wrap;
+    overflow-y: scroll;
+    margin-top: 5%;
+    position: relative;
+    background: rgb(99,65,186);
+    background: linear-gradient(90deg, rgba(99,65,186,1) 52%, rgba(169,27,180,1) 86%);
+    width:  30%;
+    height: 60%;
+    opacity: 1;
+    border-radius: 5px;
+    padding: 20px;    
+    z-index: 20;
+
+}
+
+.close {
+    position: absolute;
+    z-index: 5;
+    right: 100px;
+    top: 0px;
+    color: white;
+    font-size: 70px;
+}
+
+.close:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.mood__image {
+    width: 60px;
+    height: 60px;
+}
+
+.mood__block  {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;  
+
+    border-radius: 2px;  
+}
+
+.mood__block:hover  {
+    transform: scale(1.1);
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.mood__part {    
+    width: 90px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mood__part span {
+   color: white;
+   opacity: 0.8;
+}

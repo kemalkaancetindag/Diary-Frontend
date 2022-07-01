@@ -14,3 +14,35 @@
   outline: none;
   opacity: 1;
 }
+
+.write__text-input-container  {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.write__text-input-container-inner{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.write__text-input-container  button{
+  width: 10%;
+  height: 50px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 2px;
+  opacity: 0.8;
+  transition: 0.2s;
+  font-size: 20px;
+}
+
+.write__text-input-container  button:hover{
+ transform: scale(1.1);
+ cursor: pointer;
+ opacity: 1;
+}
+
