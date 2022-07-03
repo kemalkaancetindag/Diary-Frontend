@@ -11,19 +11,23 @@ import IndexPage from './pages/IndexPage';
 import App from './App';
 import WritePage from './pages/WritePage';
 import ProfiePage from './pages/ProfilePage';
+import { Provider } from 'react-redux';
+import { store } from './state';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-      <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<IndexPage />}/>      
-      <Route path="/write" element={<WritePage/>}/>
-      <Route path="/profile" element={<ProfiePage/>}/>  
-    </Routes>
-  </BrowserRouter>
+    <Provider store={store}>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<IndexPage />} />
+        <Route path="/write" element={<WritePage />} />
+        <Route path="/profile" element={<ProfiePage />} />
+      </Routes>
+    </BrowserRouter>
+    </Provider>
   </React.StrictMode>
 );
 
